@@ -1,0 +1,19 @@
+api_order_details:
+    path: /get/orders
+    controller: App\Controller\v1\OrderController::getOrders
+    methods: GET
+
+api_create_order:
+    path: /create/order
+    controller: App\Controller\v1\OrderController::createOrder
+    methods: POST
+
+api_update_order:
+    path: /update/orderStatus
+    controller: App\Controller\v1\OrderController::updateOrder
+    methods: PATCH
+
+api_delayed_order:
+    path: /get/all/delayedOrders
+    controller: App\Controller\v1\OrderController::delayedOrders
+    methods: GET
